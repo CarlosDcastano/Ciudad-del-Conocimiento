@@ -127,3 +127,46 @@ footer {
     grid-column: 2 / 4;
     grid-row: 3 / 5;
 }
+
+
+
+/* CSS Contacto.html*/
+
+#contact-section {
+    background: white;
+    color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;         /* separación entre los fieldsets */
+    flex-wrap: wrap;
+}
+.forms{
+    background-color: var(--card-bg);
+    padding: 2rem;
+    color: var(--card-text);
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: 1rem solid var(--card-border);
+    border-left: 1rem solid var(--card-border);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+legend {
+    background: var(--header-bg);
+    color : var(--header-text)
+}
+
+label {
+    color : var(--header-text)
+}
+
