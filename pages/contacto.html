@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+        <nav>
+            <ul>
+                <li><a href="actividades.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="profesores.html">Profesores</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<section>
+    <h2>Contacto</h2>
+    <p>Puedes comunicarte con nosotros en cualquier momento. Nuestro horario de atención es de lunes a viernes de 8:00 a 17:00, y estamos ubicados en la Ciudad del Conocimiento, Edificio Central.</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalles de la Consulta</legend>
+
+            <label for="tipo">Tipo de consulta:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="informacion">Solicitud de información</option>
+                <option value="curso">Dudas sobre cursos</option>
+                <option value="profesores">Información sobre profesores</option>
+                <option value="actividades">Consultas sobre actividades</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <label>
+                <input type="checkbox" id="suscripcion" name="suscripcion">
+                Deseo suscribirme al boletín informativo
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar Mensaje</button>
+
+    </form>
+</section>
+
+</section>
+</body>
+</html>
