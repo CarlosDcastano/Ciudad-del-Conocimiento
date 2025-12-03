@@ -131,6 +131,7 @@ footer {
 
 
 
+
 /* CSS Contacto.html*/
 
 #contact-section {
@@ -163,5 +164,30 @@ legend {
 
 label {
     color : var(--header-text)
+}
+
+
+/*CSS Biblioteca */
+
+.book-cover {
+    width: 300px;      /* el ancho que quieras */
+    height: 300px;     /* el alto que quieras */
+     /* recorta la imagen sin deformarla */
+    border-radius: 8px; /* opcional */
+}
+
+.library-section {
+    display: flex;
+}
+
+.book-catalog {
+    display: grid;
+    gap: 20px; /* espacio entre tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 20px 0;
+}
+
+footer {
+    margin: 2%;
 }
 
