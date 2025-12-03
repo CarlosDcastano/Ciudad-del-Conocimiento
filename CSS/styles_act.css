@@ -206,3 +206,11 @@ button.next { right: 10px; }
     font-weight: bold;
     color: var(--nav-bg);
 }   
+
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
