@@ -1,0 +1,193 @@
+:root {
+    --bg-body: #f3f3f3;
+    --header-bg: #003a63;
+    --header-text: #ffffff;
+
+    --nav-bg: #005a99;
+    --nav-text: #ffffff;
+
+    --section-bg: #ffffff;
+
+    --article-bg: #e6f2ff;
+    --article-border: #005a99;
+
+    --card-bg: #005a99;
+    --card-border: #003a63;
+    --card-text: #ffffff;
+
+    --footer-bg: #003a63;
+    --footer-text: #ffffff;
+
+    --shadow-color: rgba(0, 0, 0, 0.55);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-body);
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: var(--nav-bg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+    background: var(--section-bg);
+}
+
+article {
+    background: var(--article-bg);
+    padding: 20px;
+    margin: 20px;
+    border-left: 5px solid var(--article-border);
+}
+
+.servicios {
+    padding: 20px;
+    background: var(--section-bg);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 20px;
+}
+
+.cards {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    color: var(--card-text);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: 1rem solid var(--card-border);
+    border-left: 1rem solid var(--card-border);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 20px var(--shadow-color);
+}
+
+.cardOne {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.cardTwo {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.cardThree {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.cardFour {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+.cardFive {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+}
+
+
+
+
+/* CSS Contacto.html*/
+
+#contact-section {
+    background: white;
+    color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;         /* separación entre los fieldsets */
+    flex-wrap: wrap;
+}
+#contact-form{
+    display: grid;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: start;
+    justify-items: start;
+    background: var(--header-bg);
+}
+
+.form1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+legend {
+    background: var(--header-bg);
+    color : var(--header-text)
+}
+
+label {
+    color : var(--header-text)
+}
+
+
+/*CSS Biblioteca */
+
+.book-cover {
+    width: 300px;      /* el ancho que quieras */
+    height: 300px;     /* el alto que quieras */
+     /* recorta la imagen sin deformarla */
+    border-radius: 8px; /* opcional */
+}
+
+.library-section {
+    display: flex;
+}
+
+.book-catalog {
+    display: grid;
+    gap: 20px; /* espacio entre tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 20px 0;
+}
+
+footer {
+    margin: 2%;
+}
+
