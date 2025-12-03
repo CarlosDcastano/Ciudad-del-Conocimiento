@@ -87,6 +87,7 @@ footer {
     text-align: center;
     margin-top: 30px;
 
+
 }
 
 .cards h2{
@@ -160,6 +161,8 @@ footer {
 }
 
 
+
+
 .cardOne img{
     width: 500px;
     position: absolute;
@@ -221,6 +224,7 @@ footer {
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0); }
 }
+
 
 
 /* CSS Contacto.html*/
