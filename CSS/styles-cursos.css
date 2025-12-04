@@ -12,6 +12,7 @@
     background: var(--footer-bg);
     border-radius: 4px;
 }
+
 section {
     scroll-margin-top: 180px; /* altura del header + nav */
    
