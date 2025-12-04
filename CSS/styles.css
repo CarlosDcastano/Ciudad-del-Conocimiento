@@ -244,6 +244,12 @@ footer {
     display: flex;
     gap: 20px;         /* separación entre los fieldsets */
     flex-wrap: wrap;
+    border-radius: 1.5rem;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    margin-top: 3rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); /**/
 }
 #contact-form{
     display: grid;
@@ -252,6 +258,8 @@ footer {
     align-items: start;
     justify-items: start;
     background: var(--header-bg);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .form1 {
@@ -273,13 +281,19 @@ label {
 
 .book-cover {
     width: 300px;      /* el ancho que quieras */
-    height: 300px;     /* el alto que quieras */
+    height: 400px;     /* el alto que quieras */
      /* recorta la imagen sin deformarla */
     border-radius: 8px; /* opcional */
+    object-fit: cover; 
 }
 
 .library-section {
     display: flex;
+
+}.library-title {
+    margin: 0 auto 0 auto;
+    width: 220px;
+
 }
 
 .book-catalog {
@@ -287,6 +301,24 @@ label {
     gap: 20px; /* espacio entre tarjetas */
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     padding: 20px 0;
+}
+
+.book-card {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 1rem;
+    transition: transform 0.5s, box-shadow 0.5s;
+
+}
+
+.book-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.473);
 }
 
 footer {
@@ -299,3 +331,42 @@ footer {
     width: 1809px;
 }
  
+.resource-list  a {
+    text-decoration: none;
+    color : black;
+    transition: color 0.5s;
+
+
+}
+
+.resource-list  a:hover {
+    color: var(--article-border);
+}
+.resource-list li {
+    list-style: none;
+}
+
+.resource-list {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.materiales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    flex-direction: column;
+
+}
+
+fieldset {
+    width: 97%;
+}
+
+input {
+
+    margin: 1.5rem;
+}
