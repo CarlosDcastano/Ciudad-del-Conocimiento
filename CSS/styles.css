@@ -21,12 +21,19 @@
     --shadow-color: rgba(0, 0, 0, 0.55);
 }
 
+/* html, body {
+    height: 100%;
+    margin: 0;
+} */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: var(--bg-body);
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -283,6 +290,12 @@ label {
 }
 
 footer {
-    margin: 2%;
+  
+    margin-top: auto;
+    background: #003a63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 1809px;
 }
-
+ 
